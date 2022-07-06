@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.assorttech.myquizler">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".NotificationsActivity">
+        </activity>
+        <activity android:name=".FollowerActivity" />
+        <activity
+            android:name=".Profile.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NTS_Sub_Categories.IslamicStudies"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.NTS"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.FSC"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Metriculation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivacyPolicy"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".GeneralKnowledge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstMainScreen"
+            android:screenOrientation="portrait" />
+
+        <receiver android:name=".services.Receiver" />
+
+        <activity
+            android:name=".Classes.Ninth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.Tenth"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.FirstYear"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Classes.SecondYear"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthSubjects.NinthPhysics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthPhysicsQuizType.NinthHalfFirstHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthPhysicsQuizType.NinthSecondHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthPhysicsQuizType.NinthFullBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthPhysicsQuizType.NinthPastPapers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthSubjects.NinthChemistry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryFullBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryFirstHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistrySecondHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryPastPapers"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearSubjects.FirstYearChemistry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthSubjects.TenthPhysics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthQuizType.TenthPhysicsQuizType.TenthPhysicsFullBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthQuizType.TenthPhysicsQuizType.TenthPhysicsPastPaper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearSubjects.FirstYearPhysics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearQuizType.FirstYearPhysicsQuizType.FirstYearFullBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearQuizType.FirstYearPhysicsQuizType.FirstYearHalfBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearQuizType.FirstYearPhysicsQuizType.FirstYearPhysicsPastPaper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthSubjects.NinthEnglish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthSubjects.NinthComputer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthSubjects.NinthBiology"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthSubjects.NinthMath"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthQuizType.TenthPhysicsQuizType.TenthPhysicsFirstHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthQuizType.TenthPhysicsQuizType.TenthPhysicsSecondHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioFullBook"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioFirstHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioSecondHalf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioPastPaper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthPhysicsQuizType.NinthPysicsChapterWise.NinthPhysicsChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryChapterWise.NinthChemistryChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryChapterWise.NinthChemistryChapter1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryChapterWise.NinthChemistryChapter2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryChapterWise.NinthChemistryChapter3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryChapterWise.NinthChemistryChapter4"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthChemistryQuizType.NinthChemistryChapterWise.NinthChemistryChapter5"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioChapterWise.NinthBioChapter1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioChapterWise.NinthBioChapter2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".QuizScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthBioChapterWise.NinthBioChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthComputerChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthBioQuizType.NinthEnglishChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NinthQuizType.NinthMathChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthSubjects.TenthChemistry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthSubjects.TenthBio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthSubjects.TenthComputer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthSubjects.TenthEnglish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthSubjects.TenthMath"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthChapters.TenthPhysicsChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthChapters.TenthChemistryChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthChapters.TenthComputerChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthChapters.TenthEnglishChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthChapters.TenthBioChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TenthComplete.TenthChapters.TenthMathChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearSubjects.FirstYearBio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearSubjects.FirstYearComputer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearSubjects.FirstYearMath"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearSubjects.FirstYearEnglish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearChapters.FirstYearBioChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearChapters.FirstYearEnglishChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearChapters.FirstYearChemistryChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearChapters.FirstYearPhysicsChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearChapters.FirstYearComputerChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FirstYearComplete.FirstYearChapters.FirstYearMathChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearSubjects.SecondYearBio"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearSubjects.SecondYearPhysics"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearSubjects.SecondYearChemistry"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearSubjects.SecondYearEnglish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearSubjects.SecondYearMath"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearSubjects.SecondYearComputer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearChapters.SecondYearComputerChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearChapters.SecondYearPhysicsChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearChapters.SecondYearChemistryChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearChapters.SecondYearBioChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearChapters.SecondYearEnglishChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SecondYearComplete.SecondYearChapters.SecondYearMathChapters"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashScreen"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Report"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainQuizScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUsWebView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LeaderBoardScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.ChatActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_gradient"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:noHistory="true">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:src="@drawable/quizlerlogo"
+        />
+        <RelativeLayout
+            android:layout_gravity="start"
+            android:layout_margin="5dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_gravity="start"
+        android:layout_margin="5dp"
+        android:layout_marginStart="13dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Phone Number:"
+        android:textColor="@color/white"
+        />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:background="@color/white"
+            >
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/etCountryCode"
+                android:layout_weight="40"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:ccp_contentColor="@color/blue_one"
+                app:ccp_textSize="20sp"
+                app:ccp_arrowSize="20dp"
+                app:ccp_defaultPhoneCode="92"
+                app:ccp_countryPreference="PK"
+                app:ccp_clickable="true"
+                >
+
+            </com.hbb20.CountryCodePicker>
+            <!--<EditText-->
+                <!--android:id="@+id/etCountryCode"-->
+                <!--android:hint="+92"-->
+                <!--android:text="+92"-->
+                <!--android:layout_weight="30"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:inputType="phone"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textColorHint="#acabab"-->
+                <!--android:maxLength="15"-->
+                <!--android:imeOptions="actionNext"-->
+                <!--android:nextFocusRight="@id/etPhoneNoUser"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="@color/white"/>-->
+            <!--<EditText-->
+                <!--android:id="@+id/etPhoneNoUser"-->
+                <!--android:hint="3311425555"-->
+                <!--android:layout_weight="60"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:inputType="number"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textColorHint="#acabab"-->
+                <!--android:maxLength="15"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:backgroundTint="@color/white"/>-->
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_weight="60"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/button_shap">
+            <EditText
+            android:id="@+id/etPhoneNoUser"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="3312345678"
+                android:textColor="@color/blue_one"
+                android:textSize="20sp"
+                android:textColorHint="@color/gray"
+                android:layout_centerVertical="true"
+                android:background="@drawable/button_shap"
+                android:maxLength="15"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+            <TextView
+                android:text="*Country Code"
+                android:textSize="12sp"
+                android:gravity="center"
+                tools:ignore="SmallSp"
+                android:layout_weight="40"
+                android:layout_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="#acabab"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:text="*Phone Number"
+                android:layout_marginTop="1dp"
+                android:textSize="12sp"
+                tools:ignore="SmallSp"
+                android:layout_weight="60"
+                android:layout_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@color/white"
+                android:textColorHint="#acabab"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_RegisterUser"
+            android:layout_marginTop="20dp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/berlin_one"
+            android:text="SEND CODE"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@drawable/btn_shap_two"
+            />
+
+
+
+    </LinearLayout>
+</RelativeLayout>

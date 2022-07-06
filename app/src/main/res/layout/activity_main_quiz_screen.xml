@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainQuizScreen"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@color/colorPrimaryDark"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50">
+
+        <RelativeLayout
+            android:id="@+id/scoreBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimaryDark"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/question_no"
+                android:text="Q#: "
+                android:textColor="@color/DWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:paddingStart="10dp"/>
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+            <ProgressBar
+                android:id="@+id/progressBarToday"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:indeterminate="false"
+                android:max="15"
+                android:progressDrawable="@drawable/progress_bar"
+                android:visibility="visible"
+                android:layoutDirection="rtl"
+                />
+            <TextView
+                android:paddingTop="15dp"
+                android:id="@+id/text_view_countdown"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:text="00"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                />
+            </FrameLayout>
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="@string/initial_score"
+                android:textColor="@color/DWhite"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingStart="0dp"
+                android:paddingEnd="10dp"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_below="@+id/scoreBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        <TextView
+            android:id="@+id/qusetionView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text=" Question"
+            android:textColor="@color/DWhite"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+              <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alert_dialog_button_positive"
+            android:text="Option 1"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+                  android:paddingStart="2dp"
+                  android:paddingEnd="2dp"
+                  />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/alert_dialog_button_positive"
+            android:text="Option 2"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/alert_dialog_button_positive"
+            android:text="Option 3"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/alert_dialog_button_positive"
+            android:text="Option 4"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/playButtonClick"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:onClick="buttonPressed"-->
+            <!--android:src="@drawable/on" />-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/playBackGround"-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginStart="5dp"-->
+            <!--android:onClick="buttonPressed"-->
+            <!--android:src="@drawable/music_icon_on"-->
+            <!--android:layout_toEndOf="@id/playButtonClick"/>-->
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/alert_dialog_button_positive"
+            android:textAllCaps="false"
+            android:text="Next"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+           />
+
+    </RelativeLayout>
+</LinearLayout>

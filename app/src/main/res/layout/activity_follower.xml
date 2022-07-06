@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/followers_app_bar"
+        layout="@layout/app_bar_layout" />
+
+    <TextView
+        android:id="@+id/tvRecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/berlin_two"
+        android:textSize="30sp"
+        android:text="My Followers"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/friends_list"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/berlin_two"
+        android:textSize="24dp"
+        android:text="No Data Found"
+        />
+
+</LinearLayout>

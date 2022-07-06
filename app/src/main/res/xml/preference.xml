@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="music"
+        android:title="Play Music"
+        android:summary="Background music played while you take the quiz."
+        android:defaultValue="true" />
+    <SwitchPreference
+        android:key="btn_sound"
+        android:title="Play Sound"
+        android:summary="Sound is played on clicking the button."
+        android:defaultValue="true" />
+
+
+</PreferenceScreen>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".UpdateProfileActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Update"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:fontFamily="@font/berlin_two"
+        />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image_civ_update"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/default_pic"/>
+    <LinearLayout
+        android:layout_below="@id/user_image_civ_update"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="Name "
+                android:fontFamily="@font/berlin_two"
+                android:layout_weight="0.3"/>
+            <EditText
+                android:id="@+id/etFullNewNameUser"
+                android:hint="Enter full name..."
+                android:fontFamily="@font/berlin_two"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:maxLength="25"
+                android:textColor="@color/white"
+                android:textColorHint="#acabab"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:text="City"
+                android:fontFamily="@font/berlin_two"
+                android:layout_weight="0.3"/>
+            <EditText
+                android:id="@+id/etUserCity"
+                android:hint="Enter your city..."
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:fontFamily="@font/berlin_two"
+                android:layout_marginEnd="8dp"
+                android:maxLength="25"
+                android:textColor="@color/white"
+                android:textColorHint="#acabab"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/berlin_two"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:text="Favourite\nSubject" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/etFavSubject"
+                android:hint="Enter favourite subject..."
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/berlin_two"
+                android:maxLength="25"
+                android:textColor="@color/white"
+                android:textColorHint="#acabab"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_width="0dp"
+                android:fontFamily="@font/berlin_two"
+                android:layout_height="50dp"
+                android:text="Nick Name "
+                android:layout_weight="0.3"/>
+            <EditText
+                android:id="@+id/etNickName"
+                android:hint="Enter nick name..."
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/berlin_two"
+                android:maxLength="25"
+                android:textColor="@color/white"
+                android:textColorHint="#acabab"
+                android:inputType="textCapWords"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_UpdateUserName"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/berlin_two"
+            android:textSize="15sp"
+            android:padding="5dp"
+            android:background="@drawable/btn_shap_two"
+            android:text="Update Profile" />
+
+    </LinearLayout>
+</RelativeLayout>

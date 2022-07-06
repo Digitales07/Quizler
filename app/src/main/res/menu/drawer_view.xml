@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/action_change_name"
+            android:icon="@drawable/ic_person"
+            android:title="Update Profile"/>
+
+        <item
+            android:id="@+id/stats"
+            android:icon="@drawable/ic_search"
+            android:title="Search Users"/>
+
+        <item
+            android:id="@+id/followers"
+            android:icon="@drawable/ic_follower"
+            android:title="My Followers"/>
+        <item
+            android:id="@+id/leader_board"
+            android:icon="@drawable/ic_view_list_black_24dp"
+            android:title="Leader Board"/>
+
+        <item
+            android:id="@+id/action_share"
+            android:icon="@drawable/ic_share"
+            android:title="Share with Friends"/>
+        <item
+            android:id="@+id/action_rate"
+            android:icon="@drawable/ic_star"
+            android:title="Rate US"/>
+        <item
+            android:id="@+id/action_feedback"
+            android:icon="@drawable/ic_rate_review_black_24dp"
+            android:title="Feedback"/>
+
+        <item
+            android:id="@+id/action_help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="How to Play"/>
+
+        <item
+            android:id="@+id/action_about"
+            android:icon="@drawable/ic_info"
+            android:title="About Us"/>
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_lock_black_24dp"
+            android:title="Privacy Policy"/>
+
+        <item
+            android:id="@+id/action_settings"
+            android:icon="@drawable/ic_settings_black"
+            android:title="Settings"/>
+
+        <item
+            android:id="@+id/action_log_out"
+            android:icon="@drawable/ic_arrow_back_black_24dp"
+            android:title="Log Out"/>
+    </group>
+</menu>
+
+

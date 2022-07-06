@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="12"
+    android:orientation="vertical"
+    android:background="@drawable/back_gradient">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please enter 6 digit code send on Number "
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/etPasswordUser"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:hint="000000"
+            android:textColor="@color/blue_one"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/alert_dialog_button_positive"
+            android:padding="4dp"
+            android:maxLength="6"
+            android:inputType="number"
+           />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="VERIFY"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/berlin_two"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shap_two"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+        <TextView
+
+            android:id="@+id/timerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend in 59 seconds"
+            android:textSize="16sp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+        <Button
+            android:id="@+id/btn_resend"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Resend"
+            android:textSize="15sp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/berlin_two"
+            android:textColor="@color/white"
+            android:background="@drawable/btn_shap_two"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>
